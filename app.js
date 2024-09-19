@@ -23,7 +23,7 @@ app.get("/test", authorizeUser, (req, res) => {
     res.status(200).json({ success: true, user: req.user })
 })
 app.get("/",(req,res)=>{
-    res.send("https://instagram-le5w.onrender.com")
+    res.redirect("https://instagram-le5w.onrender.com")
 })
 
 
